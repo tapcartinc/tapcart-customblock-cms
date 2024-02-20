@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-twilight.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="./scripts.js" defer></script>
+    <title>Custom Block Templates</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-image">
+        <img alt="Tapcart Developer Tools" class="Header-logo-img3YvV4lcGKkeb rm-Logo-img rm-Logo-img_lg" src="https://files.readme.io/bf4b25b-small-Tapcart_DX_logo_-_Transparent_Back.png" />
+      </div>
+      <p class="main-title">Custom Block Templates</p>
+    </nav>
+
+    <div class="containers">
+      <div class="template-container">
+        <section class="template-selection__container">
+          <p class="template-selection__title">Templates</p>
+          <div>
+            <button class="template-button active" data-templatetype="productCard">Product Card</button>
+          </div>
+          <div>
+            <button class="template-button" data-templatetype="shippingTracker">Shipping Tracker</button>
+          </div>
+          <div>
+            <button class="template-button" data-templatetype="metafieldAccordion">Metafield Accordion</button>
+          </div>
+          <div>
+            <button class="template-button" data-templatetype="cartDiscountCode">Discount code banner</button>
+          </div>
+          <div>
+            <button class="template-button" data-templatetype="afterShip">Aftership</button>
+          </div>
+          <div>
+            <button class="template-button" data-templatetype="shopTheLook">Shop The Look</button>
+          </div>
+          <p class="template-selection__title">Upcoming Templates</p>
+          <div>
+            <button class="template-button upcoming">Shopify Product Recommendations</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Collection Image Grid (2x2)</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Rebuy Product Recommendations on PDP</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Rebuy Product Recommendations in cart</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">PDP Quantity Selector</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Trust Pilot</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Collection Image Carousel</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Collection Image block</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Add to Cart replacement</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Custom Variant Selector</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Calender</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Basic Bundler</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Klayvio - Notify Me Back in Stock</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Gorgias Chat</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Fast Simon - Shop The Look</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Fast Simon - Product Recommendations</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">JudgeMe reviews</button>
+          </div>
+          <div>
+            <button class="template-button upcoming">Loox reviews</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="inputs-container">
+
+        <section class="user-input__container"></section>
+
+        <section class="code-output__container">
+          <div class="code-outputs html-output">
+            <label for="html-output"
+              >HTML
+              <button class="copyButton" data-copy-target="#html-output">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-regular fa-clipboard"></i>
+              </button>
+            </label>
+            <pre>
+    <code id="html-output"class="language-html" >
+  <div class="container"><h1>Hello World!</h1><p>Welcome to Custom Blocks</p></div>
+    </code>
+    </pre>
+          </div>
+
+          <div class="code-outputs css-output">
+            <label for="css-output"
+              >CSS
+              <button class="copyButton" data-copy-target="#css-output">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-regular fa-clipboard"></i>
+              </button>
+            </label>
+            <pre>
+  <code class="language-css">
+  body {
+    background-color: #242e34;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </code>
+  </pre>
+          </div>
+
+          <div class="code-outputs javascript-output">
+            <label for="javascript-output"
+              >Javascript
+              <button class="copyButton" data-copy-target="#javascript-output">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-regular fa-clipboard"></i>
+              </button>
+            </label>
+            <pre>
+  <code class="language-javascript">
+  function helloWorld() {
+    console.log('hello world')
+  }
+  </code>
+  </pre>
+          </div>
+        </section>
+      </div>
+
+      <div class="inputs-examples">
+        <section class="example">
+          <p class="preview-example__title">Preview Example</p>
+            <video  autoplay muted loop>
+              <source src ="./assets/productCard.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </section>
+      </div>
+
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        let html = document.querySelector('.language-html').innerHTML
+        document.querySelector('.language-html').textContent = html
+        hljs.highlightAll()
+      })
+    </script>
+  </body>
+</html>
